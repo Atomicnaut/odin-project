@@ -33,7 +33,6 @@ function getComputerChoice() {
 }
 
 function playRound(playerSelection, computerSelection) {
-	console.log(computerSelection);
 	if (playerSelection === computerSelection) roundWinner = "tie";
 	if (
 		(playerSelection === "rock" && computerSelection === "scissors") ||
@@ -51,7 +50,6 @@ function playRound(playerSelection, computerSelection) {
 		computerScore++;
 		roundWinner = "computer";
 	}
-	// updateScoreMessage(roundWinner, playerSelection, computerSelection);
 	updateScore(roundWinner, playerSelection, computerSelection);
 }
 
@@ -83,14 +81,8 @@ function handleClick(playerSelection) {
 
 		// Style disabled buttons
 		rockButton.setAttribute("style", "opacity: 0.5; pointer-events: none;");
-		paperButton.setAttribute(
-			"style",
-			"opacity: 0.5; pointer-events: none;"
-		);
-		scissorsButton.setAttribute(
-			"style",
-			"opacity: 0.5; pointer-events: none;"
-		);
+		paperButton.setAttribute("style", "opacity: 0.5; pointer-events: none;");
+		scissorsButton.setAttribute("style", "opacity: 0.5; pointer-events: none;");
 	}
 }
 

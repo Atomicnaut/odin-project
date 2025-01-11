@@ -11,7 +11,7 @@ console.log(greeting);
 
 // multiline
 const newline = `One day you finally knew
-what you had to do, and began,`;
+what you had to do, and began.`;
 console.log(newline);
 
 // numbers and strings
@@ -47,12 +47,12 @@ if (0) {
 	console.log("This is a falsy value");
 }
 // if / else if
-let year = 2024;
+let year = 2023;
 if (year === 1987) {
 	console.log("Chris was born");
 } else if (year === 1988) {
 	console.log("Lauren was born");
-} else if (year === 2024) {
+} else if (year === 2023) {
 	console.log("Benjamin was born");
 } else {
 	console.log("Something else probably happened");
@@ -62,8 +62,7 @@ if (year === 1987) {
 let age = 36;
 let canVote = age > 21 ? true : false;
 console.log(canVote);
-let message =
-	age < 3
+let message = age < 3
 		? "Hi, baby!"
 		: age < 18
 		? "Hello!"

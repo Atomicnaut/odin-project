@@ -25,9 +25,10 @@ img {
 
 figcaption {
 	width: 100%;
+	font-size: 0.8rem;
 }
 
-ul {
+.main-list {
 	padding-left: 0;
 	list-style: none;
 }
